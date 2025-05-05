@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="src/output.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Portofolio</title>
 </head>
 
@@ -57,7 +58,7 @@
       <div class="flex flex-col lg:px-20 justify-center items-center h-full overflow-hidden">
         <div class="w-full h-4/5 md:h-full rounded-2xl overflow-hidden">
           <div class="absolute text-white flex flex-col justify-center md:items-center mx-3 md:mx-0 w-full md:w-1/2 h-2/3">
-            <div class="w-2/3">
+            <div class="w-2/3 z-20" data-aos="fade-up" data-aos-duration="1000">
               <h1 class="text-xl font-semibold md:text-3xl">
                 <p class="flex gap-2"><span class="hidden md:block">Hallo everyone,</span> my name is</p>
                 <span class="block font-bold text-4xl mt-1 lg:text-5xl">Alief wafiq ramadhan</span>
@@ -75,8 +76,8 @@
               </p>
             </div>
           </div>
-          <img src="img/profile.png" alt="" class="object-cover hidden md:block">
-          <img src="img/profile-mobile.png" alt="" class="object-cover h-full md:hidden">
+          <img src="img/profile.png" alt="" class="object-cover hidden md:block z-10 rounded-2xl" data-aos="fade-up" data-aos-duration="1000">
+          <img src="img/profile-mobile.png" alt="" class="object-cover h-full md:hidden rounded-2xl">
         </div>
         <div class="w-full md:w-3/4 gap-5 flex items-center mt-5 flex-nowrap overflow-hidden">
           <ul
@@ -220,28 +221,27 @@
   <!-- section end -->
 
   <!-- about start -->
-  <section id="about" class="h-screen">
+  <section id="about">
     <div class="h-full container  w-full">
-      <div class="flex lg:px-10 px-5 flex-wrap items-center h-full w-full lg:py-20">
+      <div class="flex lg:px-20 px-5 flex-wrap items-center h-full w-full lg:py-20">
         <!-- <div class="lg:px-10 px-5 mb-10 w-full lg:flex justify-center items-center"> -->
-          <div class="w-1/2">
-            <h1 class="font-bold text-primary lg:text-5xl text-2xl">About Me</h1>
-          </div>
           <div class="w-1/2 justify-center items-center flex flex-col">
             <!-- <h1 class="font-bold uppercase text-primary lg:text-5xl text-2xl">
               A Software Engineer from Pekanbaru,indonesia
             </h1> -->
-            <p class="font-medium text-base text-secondary my-5 lg:text-2xl">
-              Saya Alief Wafiq Ramadhan, pelajar dari SMKN 2 Pekanbaru jurusan PPLG. Sejak awal belajar pemrograman,
-              saya langsung jatuh cinta dengan dunia Web Development dan IoT.
+            <p class="font-medium text-base text-secondary my-5 lg:text-2xl" data-aos="fade-right" data-aos-duration="1000">
+              Saya Alief Wafiq Ramadhan, pelajar dari SMKN 2 Pekanbaru jurusan PPLG.
+              saya memiliki passion di bidang Web Development dan UI/UX.
               <br><br>
-              Saya menikmati proses menciptakan sesuatu dari nol, baik itu website interaktif maupun sistem berbasis IoT
-              yang bisa membuat hidup jadi lebih praktis. Sebagai junior software engineer, saya terus belajar, mencoba,
+              Saya menikmati proses menciptakan sesuatu dari nol, baik itu design website yang modern dan menarik maupun sebuah website interaktif dan user friendly. Sebagai junior software engineer, saya terus belajar, mencoba,
               dan berkembang melalui berbagai proyek dan tantangan baru.
             </p>
            
           <!-- </div> -->
         </div>
+          <div class="w-1/2">
+            <!-- <h1 class="font-bold text-primary lg:text-5xl text-2xl">About Me</h1> -->
+          </div>
       </div>
     </div>
   </section>
@@ -484,6 +484,7 @@
   <!-- contact end -->
   <script src="js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     var glide01 = new Glide(".glide-01", {
       type: "slider",
@@ -498,6 +499,7 @@
     });
 
     glide01.mount()
+    AOS.init();
   </script>
 </body>
 
