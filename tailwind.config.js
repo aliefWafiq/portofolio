@@ -25,6 +25,7 @@ module.exports = {
       },
        fontFamily: {
         'fira': ['Fira Sans', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       },
     },
   },
